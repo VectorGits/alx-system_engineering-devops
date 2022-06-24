@@ -10,3 +10,4 @@ Task 08 - Script to delete betty file.
 Task 09 - Script to delete /tmp/myfirstdirectory.
 Task 10 - Script to change working dir to previous.
 Task 11 - Script to list all freakin files.
+Task 12 - Script to print file name.
