@@ -16,3 +16,4 @@ Task 14 - Script that copies updated HTML files from cd to '../'.
 Task 15 - Script to move all files beginning with uppercase to /tmp/u
 Task 16 - Script to delete files ending in '~'
 Task 17 - Script to create multiple directories with limited characters.
+Task 18 - Displays files and directories of cd.
