@@ -17,3 +17,4 @@ Task 15 - Script to move all files beginning with uppercase to /tmp/u
 Task 16 - Script to delete files ending in '~'
 Task 17 - Script to create multiple directories with limited characters.
 Task 18 - Displays files and directories of cd.
+Task 19 - Used with cmd file to detect School data files which always contain SCHOOL at offset 0.
