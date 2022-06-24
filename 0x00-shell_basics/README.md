@@ -14,3 +14,4 @@ Task 12 - Script to print file name.
 Task 13 - Symbolic link to /bin/ls, named ls.
 Task 14 - Script that copies updated HTML files from cd to '../'.
 Task 15 - Script to move all files beginning with uppercase to /tmp/u
+Task 16 - Script to delete files ending in '~'
