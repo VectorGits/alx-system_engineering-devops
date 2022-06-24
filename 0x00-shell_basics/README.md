@@ -6,3 +6,4 @@ Task 04 - Displays current directory with hidden files in long format.
 Task 05 - Displays current directory in long format, with user and group ID's and hidden files.
 Task 06 - Script that makes directory in another directory.
 Task 07 - Script to move file betty from /tmp/ to /tmp/myfirstdirectory.
+Task 08 - Script to delete betty file.
