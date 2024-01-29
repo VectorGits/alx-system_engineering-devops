@@ -1,0 +1,9 @@
+hr=0
+min=0
+
+While hr < 13
+ print hr
+ increment hr
+	while min <= 59
+	print
+	increment
