@@ -6,7 +6,6 @@
 x=1
 while [ $x -le 10 ]
 do
-	echo "Best School"
 	if [ $x -eq 9 ]
 	then
 		echo "Hi"
@@ -16,6 +15,8 @@ do
 	elif [ $x -eq 8 ]
 	then
 		echo "Good luck"
+	else
+		echo "Best School"
 	fi
 	(( x++ ))
 done
