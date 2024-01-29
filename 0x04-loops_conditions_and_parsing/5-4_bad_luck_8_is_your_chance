@@ -8,10 +8,10 @@ while [[ x -le 10 ]]
 do
 	if [[ x -eq 4 ]]
 	then
-		echo "Bad luck"
+		echo "bad luck"
 	elif [[ x -eq 8 ]]
 	then
-		echo "Good luck"
+		echo "good luck"
 	else
 		echo "Best School"
 	fi
