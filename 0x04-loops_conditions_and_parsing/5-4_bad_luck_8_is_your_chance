@@ -6,10 +6,7 @@
 x=1
 while [ $x -le 10 ]
 do
-	if [ $x -eq 9 ]
-	then
-		echo "Hi"
-	elif [ $x -eq 4 ]
+	if [ $x -eq 4 ]
 	then
 		echo "Bad luck"
 	elif [ $x -eq 8 ]
