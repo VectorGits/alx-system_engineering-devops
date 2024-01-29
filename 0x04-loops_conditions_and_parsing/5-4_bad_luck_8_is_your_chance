@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This script displays Best school 10 times using the while loop
+# If on the 9th iteration, display Bad luck, for the fourth loop iteration,
+# displays good luck and after the 8th iteration, 
+# displays Best School for the other iterations
+x=1
+while [ $x -le 10 ]
+do
+	echo "Best School"
+	if [ $x -eq 9 ]
+	then
+		echo "Hi"
+	elif [ $x -eq 4 ]
+	then
+		echo "Bad luck"
+	elif [ $x -eq 8 ]
+	then
+		echo "Good luck"
+	fi
+	(( x++ ))
+done
