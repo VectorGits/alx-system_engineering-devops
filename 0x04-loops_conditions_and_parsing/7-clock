@@ -8,11 +8,14 @@ while [ $hour -lt 13 ]
 do
 	echo "Hour: $hour"
 	min=0
-	while [ $min -lt 60 ]
-	do
-		echo "$min"
-		((min++))
-	done
+	if [ $hour -ne 12 ]
+	then
+		while [ $min -lt 60 ]
+		do
+			echo "$min"
+			((min++))
+		done
+	fi
 
 	((hour++))
 done
