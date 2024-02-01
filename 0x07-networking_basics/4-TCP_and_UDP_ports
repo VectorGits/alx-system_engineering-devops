@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Displays listening ports
+# -t: Shows TCP ports
+# -u: Shows UDP ports
+# -l: Shows only listening ports
+# -p: Shows the PID and name of the program to which each socket belongs
+# -n: Shows the port number in numerical form
+
+sudo netstat -tulpn
