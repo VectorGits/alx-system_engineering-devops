@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Script that configures an Ubuntu server
+
+# Backup the original file
+sudo cp /etc/hosts ~/hosts.new
+
+# Change the resolution of localhost and facebook.com
+sed -i 's/127.0.0.1/127.0.0.2/' ~/hosts.new
+sed -i '2i8.8.8.8 www.facebook.com' ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
