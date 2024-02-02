@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Script that displays all active IPv4 IPs on the machine it’s executed on.
 
 # Get the active IPv4 IPs
