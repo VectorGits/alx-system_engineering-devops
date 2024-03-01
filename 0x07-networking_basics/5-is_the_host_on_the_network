@@ -1,15 +1,10 @@
 #!/usr/bin/env bash
-# Pings IP address passed as argument
+# Script pings an IP address passed as an argument.
 
-# Check if IP address was passed as argument
-if [ $# -eq 0 ]; then
-	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
-	exit 1
+# Check if no argument is passed
+if [ "$#" -eq 0 ]; then
+    echo 'Usage: 5-is_the_host_on_the_network {IP_ADDRESS}'
 else
-	# Ping IP address 5 times
-	if ping -c 5 "$1" > /dev/null; then
-		echo "Host is up"
-	else
-		echo "Host is down or unreachable"
-	fi
+    # Ping the IP address 5 times
+    ping -c 5 "$1"
 fi
