@@ -2,10 +2,14 @@
 # Pings IP address passed as argument
 
 # Check if IP address was passed as argument
-if [ $# -eq 0 ]; then
+if [ $# -ne 1 ]; then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 	exit 1
 else
 	# Ping IP address 5 times
-	ping -c 5 "$1"
+	if ping -c 5 "$1" > /dev/null; then
+		echo "Host is up"
+	else
+		echo "Host is down or unreachable"
+	fi
 fi
