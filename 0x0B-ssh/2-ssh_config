@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# This script is used to configure the SSH client to use the private key for authentication
+
+Host *
+	IdentityFile ~/.ssh/school
+	PasswordAuthentication no
