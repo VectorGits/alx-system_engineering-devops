@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# This script is used to install nginx on my web server web-01
+
+# Update the package list
+sudo apt-get update -y -qq
+
+# Install nginx
+sudo apt-get install -y nginx
+
+# Message
+echo -e "\n Setting up some Minor stuff\n"
+
+# Start nginx
+sudo service nginx start
+
+# Enable nginx to bypass firewall
+sudo ufw allow 'Nginx HTTP'
+
+# Give the user ownership to website files for easy editing
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
+# Backup default index
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
+
+# Creating new index
+echo -e "Hello World!" | dd status=none of=/var/www/html/index.nginx-debian.html
+
+# Restarting nginx
+sudo service nginx restart
+
+echo -e "\nCompleted. ✅\n"
