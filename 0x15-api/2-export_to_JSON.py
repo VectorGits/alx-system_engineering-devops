@@ -3,8 +3,8 @@
 Script to get data from API and convert to JSON
 '''
 
-import json
 import csv
+import json
 import requests
 import sys
 
