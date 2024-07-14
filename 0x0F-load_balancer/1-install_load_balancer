@@ -41,8 +41,8 @@ frontend vector-frontend
 
 backend vector-backend
     balance roundrobin
-    server 25997-web-01 34.207.227.124:80 check
-    server 25997-web-02 52.6.126.211:80 check
+    server 25997-web-01 34.202.158.118:80 check
+    server 25997-web-02 54.146.90.243:80 check
 "
 
 # shellcheck disable=SC2154
