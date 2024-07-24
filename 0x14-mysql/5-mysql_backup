@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# backup and compress my databases in case of a power outage or worse, fire disaster...
+# backup and compress my databases
 
 # variables
 day=$(date +"%d")
