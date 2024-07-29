@@ -5,9 +5,3 @@ chmod 644 /etc/nginx/nginx.conf
 sed -i "1i user nginx;" /etc/nginx/nginx.conf
 sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
 sudo -u nginx service nginx restart
-
-# Verify that Nginx is running as the nginx user
-ps aux | grep '[n]ginx: worker process'
-
-# Verify that Nginx is listening on port 8080
-netstat -tuln | grep ':8080'
