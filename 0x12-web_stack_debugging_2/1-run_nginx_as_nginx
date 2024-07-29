@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# Fixes server bug
+# fix container
 pkill -f apache2
 chmod 644 /etc/nginx/nginx.conf
 sed -i "1i user nginx;" /etc/nginx/nginx.conf
 sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
-# restart
-su nginx service nginx restart
+sudo -u nginx service nginx restart
