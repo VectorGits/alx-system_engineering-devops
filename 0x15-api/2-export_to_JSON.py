@@ -12,9 +12,9 @@ if __name__ == '__main__':
     USER_ID = sys.argv[1]
     user_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(USER_ID)
     res = requests.get(user_url)
-    """Docs"""
+    """parse as JSON and get username"""
     username = res.json().get("username")
-    """Docs"""
+    """Fetch User Tasks"""
     task_url = user_url + "/todos"
     res = requests.get(task_url)
     tasks = res.json()
